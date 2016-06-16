@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>amumustyle</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-06-16T06:49:54.883Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>amumustyle</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test3</title>
+    <link href="http://yoursite.com/2016/06/16/test3/"/>
+    <id>http://yoursite.com/2016/06/16/test3/</id>
+    <published>2016-06-16T06:49:01.000Z</published>
+    <updated>2016-06-16T06:49:54.883Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;加油学习~奋斗  第3个&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;方便的&lt;code&gt;导入导出&lt;/code&gt;功能&lt;ul&gt;
+&lt;li&gt;直接把一个markdown的文本文件拖放到当前这个页面就可以了&lt;/li&gt;
+&lt;li&gt;导出为一个html格式的文件，样式一点也不会丢失&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;编辑和预览&lt;code&gt;同步滚动&lt;/code&gt;，所见即所得（右上角设置） &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VIM快捷键&lt;/code&gt;支持，方便vim党们快速的操作 （右上角设置）&lt;/li&gt;
+&lt;li&gt;强大的&lt;code&gt;自定义CSS&lt;/code&gt;功能，方便定制自己的展示&lt;/li&gt;
+&lt;li&gt;有数量也有质量的&lt;code&gt;主题&lt;/code&gt;,编辑器和预览区域&lt;/li&gt;
+&lt;li&gt;完美兼容&lt;code&gt;Github&lt;/code&gt;的markdown语法&lt;/li&gt;
+&lt;li&gt;预览区域&lt;code&gt;代码高亮&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;所有选项自动记忆&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;加油学习~奋斗  第3个&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;方便的&lt;code&gt;导入导出&lt;/code&gt;功能&lt;ul&gt;
+&lt;li&gt;直接把一个markdown的文本文件拖放到当前这个页面就可以了&lt;/li&gt;
+&lt;li&gt;导出为一个html格式的
+    
+    </summary>
+    
+      <category term="test" scheme="http://yoursite.com/categories/test/"/>
+    
+    
+      <category term="firsttest" scheme="http://yoursite.com/tags/firsttest/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2016/06/15/test/"/>
+    <id>http://yoursite.com/2016/06/15/test/</id>
+    <published>2016-06-15T13:56:36.000Z</published>
+    <updated>2016-06-15T14:09:30.112Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;加油学习~奋斗&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;方便的&lt;code&gt;导入导出&lt;/code&gt;功能&lt;ul&gt;
+&lt;li&gt;直接把一个markdown的文本文件拖放到当前这个页面就可以了&lt;/li&gt;
+&lt;li&gt;导出为一个html格式的文件，样式一点也不会丢失&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;编辑和预览&lt;code&gt;同步滚动&lt;/code&gt;，所见即所得（右上角设置） &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;VIM快捷键&lt;/code&gt;支持，方便vim党们快速的操作 （右上角设置）&lt;/li&gt;
+&lt;li&gt;强大的&lt;code&gt;自定义CSS&lt;/code&gt;功能，方便定制自己的展示&lt;/li&gt;
+&lt;li&gt;有数量也有质量的&lt;code&gt;主题&lt;/code&gt;,编辑器和预览区域&lt;/li&gt;
+&lt;li&gt;完美兼容&lt;code&gt;Github&lt;/code&gt;的markdown语法&lt;/li&gt;
+&lt;li&gt;预览区域&lt;code&gt;代码高亮&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;所有选项自动记忆&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;加油学习~奋斗&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;方便的&lt;code&gt;导入导出&lt;/code&gt;功能&lt;ul&gt;
+&lt;li&gt;直接把一个markdown的文本文件拖放到当前这个页面就可以了&lt;/li&gt;
+&lt;li&gt;导出为一个html格式的文件，样式
+    
+    </summary>
+    
+      <category term="test" scheme="http://yoursite.com/categories/test/"/>
+    
+    
+      <category term="firsttest" scheme="http://yoursite.com/tags/firsttest/"/>
+    
+  </entry>
+  
+</feed>
