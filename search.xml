@@ -26,7 +26,7 @@
       <content type="html"><![CDATA[<blockquote>
 <p>加油学习~奋斗</p>
 </blockquote>
-<h2 id="js数据类型"><a href="#js数据类型" class="headerlink" title="js数据类型"></a>js数据类型</h2><p>5种基本数据类型：<code>Undefined、Null、Boolean、Number、String</code>。<br>还有一种复杂的数据类型Object，Object本质是一组无序的名值对组成的。</p>
+<h2 id="js数据类型"><a href="#js数据类型" class="headerlink" title="js数据类型"></a>js数据类型</h2><p>5种基本数据类型：<code>Undefined、Null、Boolean、Number、String</code>。<br>还有一种复杂的数据类型Object，Object本质是一组无序的名值对组成的。<br><a id="more"></a></p>
 <ul>
 <li><code>Undefined</code>类型只有一个值:即undefined，使用var声明变量，但是未对初始化的，这个变量就是Undefined类型的，undefined值是派生自null值的，所以undefined==null</li>
 <li><code>Null</code>类型也只有一个值:null值表示一个空对象的指针。</li>
