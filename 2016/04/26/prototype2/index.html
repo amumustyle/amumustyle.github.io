@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="ajax javascript," />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -104,22 +104,30 @@
 
 
 
-<meta name="description" content="加油学习~奋斗 
+<meta name="description" content="加油学习~奋斗
 
-什么是AJAX？AJAX是一种无需刷新页面就能够从服务器取得数据的方法(“异步”特性),允许你根据用户事件来更新部分页面内容。它是使用XMLHttpRequest对象(AJAX核心)与服务器端通信的脚本语言。它可以发送及接收各种格式的信息，包括JSON、XML、HTML和文本文件。">
+什么是原型？原型是一个对象，其他对象可以通过它实现属性继承。简单的说就是任何一个对象都可以成为原型">
 <meta property="og:type" content="article">
-<meta property="og:title" content="菜鸟笔记--AJAX">
-<meta property="og:url" content="http://yoursite.com/2016/06/16/AJAX/index.html">
+<meta property="og:title" content="菜鸟笔记--JavaScript原型与原型链">
+<meta property="og:url" content="http://yoursite.com/2016/04/26/prototype2/index.html">
 <meta property="og:site_name" content="amumustyle">
-<meta property="og:description" content="加油学习~奋斗 
+<meta property="og:description" content="加油学习~奋斗
 
-什么是AJAX？AJAX是一种无需刷新页面就能够从服务器取得数据的方法(“异步”特性),允许你根据用户事件来更新部分页面内容。它是使用XMLHttpRequest对象(AJAX核心)与服务器端通信的脚本语言。它可以发送及接收各种格式的信息，包括JSON、XML、HTML和文本文件。">
-<meta property="og:updated_time" content="2016-06-26T06:23:14.717Z">
+什么是原型？原型是一个对象，其他对象可以通过它实现属性继承。简单的说就是任何一个对象都可以成为原型">
+<meta property="og:image" content="http://yoursite.com/1.png">
+<meta property="og:image" content="http://yoursite.com/2.png">
+<meta property="og:image" content="http://yoursite.com/3.png">
+<meta property="og:image" content="http://yoursite.com/4.png">
+<meta property="og:image" content="http://yoursite.com/5.png">
+<meta property="og:image" content="http://yoursite.com/6.png">
+<meta property="og:image" content="http://yoursite.com/7.png">
+<meta property="og:updated_time" content="2016-06-26T08:01:27.267Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="菜鸟笔记--AJAX">
-<meta name="twitter:description" content="加油学习~奋斗 
+<meta name="twitter:title" content="菜鸟笔记--JavaScript原型与原型链">
+<meta name="twitter:description" content="加油学习~奋斗
 
-什么是AJAX？AJAX是一种无需刷新页面就能够从服务器取得数据的方法(“异步”特性),允许你根据用户事件来更新部分页面内容。它是使用XMLHttpRequest对象(AJAX核心)与服务器端通信的脚本语言。它可以发送及接收各种格式的信息，包括JSON、XML、HTML和文本文件。">
+什么是原型？原型是一个对象，其他对象可以通过它实现属性继承。简单的说就是任何一个对象都可以成为原型">
+<meta name="twitter:image" content="http://yoursite.com/1.png">
 
 
 
@@ -140,9 +148,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/06/16/AJAX/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/04/26/prototype2/"/>
 
-  <title> 菜鸟笔记--AJAX | amumustyle </title>
+  <title> 菜鸟笔记--JavaScript原型与原型链 | amumustyle </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -315,7 +323,7 @@
             
             
               
-                菜鸟笔记--AJAX
+                菜鸟笔记--JavaScript原型与原型链
               
             
           </h1>
@@ -327,8 +335,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-16T14:49:01+08:00" content="2016-06-16">
-              2016-06-16
+            <time itemprop="dateCreated" datetime="2016-04-26T16:39:44+08:00" content="2016-04-26">
+              2016-04-26
             </time>
           </span>
 
@@ -341,8 +349,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/ajax/" itemprop="url" rel="index">
-                    <span itemprop="name">ajax</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -357,8 +365,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/06/16/AJAX/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/16/AJAX/" itemprop="commentsCount"></span>
+                <a href="/2016/04/26/prototype2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/26/prototype2/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -368,7 +376,7 @@
 
           
           
-             <span id="/2016/06/16/AJAX/" class="leancloud_visitors" data-flag-title="菜鸟笔记--AJAX">
+             <span id="/2016/04/26/prototype2/" class="leancloud_visitors" data-flag-title="菜鸟笔记--JavaScript原型与原型链">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -391,59 +399,38 @@
 
       
         <blockquote>
-<p>加油学习~奋斗 </p>
+<p>加油学习~奋斗</p>
 </blockquote>
-<h2 id="什么是AJAX？"><a href="#什么是AJAX？" class="headerlink" title="什么是AJAX？"></a>什么是AJAX？</h2><p>AJAX是一种无需刷新页面就能够从服务器取得数据的方法(“异步”特性),允许你根据用户事件来更新部分页面内容。它是使用XMLHttpRequest对象(AJAX核心)与服务器端通信的脚本语言。它可以发送及接收各种格式的信息，包括JSON、XML、HTML和文本文件。<br><a id="more"></a><br>比如，我们注册的时候信息填写错误，是不是没刷新页面就能直接看到信息提示，比如我们玩QQ的时候，有什么消息都会自动提醒你，不需要你去刷新页面，不会影响你干别的事情，这就是Ajax做的事情。</p>
-<h2 id="Ajax的原理"><a href="#Ajax的原理" class="headerlink" title="Ajax的原理"></a>Ajax的原理</h2><p>通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面。其中最关键的一步就是从服务器获得请求数据。要清楚这个过程和原理，我们必须对 XMLHttpRequest有所了解。</p>
-<h3 id="XHR对象的相关属性"><a href="#XHR对象的相关属性" class="headerlink" title="XHR对象的相关属性:"></a>XHR对象的相关属性:</h3><ul>
-<li>onreadystatechange  每次状态改变所触发事件的事件处理程序，类似于window.onload</li>
-<li>responseText   作为响应主体被返回的文本，也就是服务器返回的信息</li>
-<li>responseXML    从服务器进程返回的DOM兼容的文档数据对象。</li>
-<li>status         响应的HTTP状态  　　</li>
-<li>statusText     HTTP状态说明  　　</li>
-<li>readyState     请求过程的当前状态，下面是该属性的取值<pre><code>0 ：未初始化,对象已建立，但是尚未调用open方法
-1 ：启动，已经调用open方法尚，尚未调用send方法
-2 ：发送, send方法已调用，尚未接收到响应
-3 ：接收，已经接收到部分响应数据
-4 ：完成，数据接收完毕,可以再客户端使用了
-</code></pre></li>
+<h2 id="什么是原型？"><a href="#什么是原型？" class="headerlink" title="什么是原型？"></a>什么是原型？</h2><p>原型是一个对象，其他对象可以通过它实现属性继承。<br>简单的说就是任何一个对象都可以成为原型<br><a id="more"></a><br><code>prototype属性</code>： 我们创建的每个函数都有一个prototype属性，这个属性是一个指针，指向一个对象，而这个对象包含可以有特定类型的所有实例共享的属性和方法。这个对象就是原型对象（也就是某个对象的原型所引用的对象）。</p>
+<p><code>1.总之只要创建了函数，该函数都有一个prototype属性，指向函数的原型对象。</code></p>
+<p><img src="1.png" alt="tu"><br>如上图，Person是一个函数，右侧的方框就是它的原型。</p>
+<p><code>2.默认情况下所有原型对象都会自动获得一个constructor（构造函数）属性，这个属性包含一个指向prototype属性所在函数的指针。</code><br>简单来说prototype的属性值是一个对象（属性的集合，我们可以给他设置各种值），默认的只有一个叫做constructor的属性，指向这个函数本身。<br>下面就是一个原型对象的例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;   </span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        Person.prototype.name=<span class="string">"花花"</span>;</span><br><span class="line">        Person.prototype.sex=<span class="string">"女"</span>;</span><br><span class="line">        Person.prototype.showName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'我的名字叫:'</span>+<span class="keyword">this</span>.name+<span class="string">'我是:'</span>+<span class="keyword">this</span>.sex+<span class="string">'的'</span>);</span><br><span class="line">            &#125;</span><br><span class="line">     </span><br><span class="line">        <span class="keyword">var</span> p1=<span class="keyword">new</span> Person(); </span><br><span class="line">         </span><br><span class="line">        p1.showName();</span><br></pre></td></tr></table></figure></p>
+<p><img src="2.png" alt="tu"><br>所以在这个例子里：原型对象Person.prototype的constructor属性指向Person。</p>
+<p><code>3.原型对象的内部还包括一个指针__proto__指向构造函数的原型对象。每个对象都有一个__proto__属性。
+注意：Object.prototype是一个特例——它的__proto__指向的是null</code><br>这个<strong>proto</strong>是一个隐藏的属性，在FF，Safari和Ghrome支持。</p>
+<p>如上面的例子，Person是一个函数，p1对象是从Person函数new出来的，这样p1对象就可以调用Person.prototype中的属性。因为每个对象都有一个隐藏的属性——“<strong>proto</strong>”，这个属性引用了创建这个对象的函数的prototype。即：p1.<strong>proto</strong> === Person.prototype<br>下面在上面的例子中添加下面代码来验证一下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(p1.__proto__ === Person.prototype);<span class="comment">//ture</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="3.png" alt="tu"><br>结果为true证明他们是相等的</p>
+<p>简单分析一下：构造函数Person有一个prototype的属性对象（即：Person.prototype），其中prototype属性对象中会包括<strong>proto</strong>,constructor(构造函数)指向构造函数，还有一些添加的属性。创建构造函数的实例对象p1，p1会有<strong>proto</strong>属性,指向其原型Person.prototype。</p>
+<p>看看下面的图捋一捋:<br><img src="4.png" alt="tu"><br>那么问题来了，之前我们说每个对象都有一个<strong>proto</strong>属性，函数也是一种对象，那么函数自然也有<strong>proto</strong>了，函数也是被创建出来的。谁创建了函数呢？那就是——Function——注意这个大写的“F”。</p>
+<p>演示代码如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span>(<span class="params">a,b</span>) </span>&#123;   </span><br><span class="line">            <span class="keyword">return</span> a+b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(fn1(<span class="number">2</span>,<span class="number">6</span>));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> fn2=<span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"return a+b"</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(fn2(<span class="number">6</span>,<span class="number">6</span>));</span><br></pre></td></tr></table></figure></p>
+<p>以上代码中，第一种方式是比较传统的函数创建方式，第二种是用new Functoin创建。注意：不推荐用第二种方式</p>
+<p><code>综上所述：第一个例子中的构造函数Person也是一个对象，所以它也存在__proto__属性，指向它的原型Function.prototype。</code><br><img src="5.png" alt="tu"><br>（根据这个图用下面的方法可自行验证）</p>
+<p><code>Function.prototype指向的对象也是一个普通的被Object创建的对象，所以Function.prototype指向的对象，它的__proto__也指向Object.prototype</code></p>
+<p>验证一下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Function</span>.prototype.__proto__);<span class="comment">//结果是Object &#123;&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>判断原型的方法有下面三种：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.getPrototypeOf(Person));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.__proto__);<span class="comment">//函数原型对象</span></span><br><span class="line"><span class="built_in">console</span>.log(Person.constructor.prototype);</span><br></pre></td></tr></table></figure></p>
+<p>Object.getPrototypeOf()方法是ECMAScript5新加的，主流浏览才可以用。<br><code>总结一下：每个函数都有一个prototype，即原型（指向函数的原型对象）。每个对象都有一个__proto__属性（指向构造函数的原型对象），可成为隐式原型。
+那么原型就是构造函数的实例对象的__proto__属性指向的构造函数的原型对象。</code></p>
+<h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><p><code>原型链：访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着__proto__这条链向上找，这就是原型链</code><br>下面是一个原型链的例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,sex</span>) </span>&#123;   </span><br><span class="line">            <span class="keyword">this</span>.name=name;</span><br><span class="line">            <span class="keyword">this</span>.sex=sex;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        Person.prototype.show=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'我的名字叫:'</span>+<span class="keyword">this</span>.name+<span class="string">'我是:'</span>+<span class="keyword">this</span>.sex+<span class="string">'的'</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        Person.prototype.showName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'名字:'</span>+<span class="keyword">this</span>.name);</span><br><span class="line">            &#125;</span><br><span class="line">              </span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">Worker</span>(<span class="params">name,sex,job</span>)</span>&#123;</span><br><span class="line">            Person.call(<span class="keyword">this</span>,name,sex);<span class="comment">//继承Person属性</span></span><br><span class="line">            <span class="keyword">this</span>.job=job;</span><br><span class="line">        &#125;</span><br><span class="line">        Worker.prototype=Person.prototype;<span class="comment">//这是原型链（通往父级的一条链上传递）</span></span><br><span class="line">        Worker.prototype.showJob=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="comment">//子级添加新方法</span></span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.job);</span><br><span class="line">        &#125;</span><br><span class="line">        Worker.prototype.show=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'名字:'</span>+<span class="keyword">this</span>.name+<span class="string">'性别:'</span>+<span class="keyword">this</span>.sex+<span class="string">'工作：'</span>+<span class="keyword">this</span>.job);</span><br><span class="line">            &#125;</span><br><span class="line">        <span class="keyword">var</span> p2=<span class="keyword">new</span> Worker(<span class="string">'mumu'</span>,<span class="string">'女'</span>,<span class="string">'student'</span>); </span><br><span class="line">        p2.showName();</span><br><span class="line">        p2.show();</span><br></pre></td></tr></table></figure></p>
+<p><img src="6.png" alt="tu"></p>
+<ul>
+<li><p>分析下例子：创建Person函数，并在Person的原型对象上创建show和showName函数</p>
+</li>
+<li><p>创建Worker函数，Worker原型对象继承Person的原型对象 Worker.prototype = Person.prototype;并在Worker原型对象上覆盖Person的原型对象上的show函数。</p>
+</li>
+<li>那么，创建Worker的实例对象p2，在调用函数showName()时会在实例本身进行查找，若没有找到，再沿着<strong>proto</strong>这条链查找上一级原型对象，一层一层向上找（原型链顶端Object.prototype），直到找到为止。</li>
 </ul>
-<h3 id="XHR对象的方法"><a href="#XHR对象的方法" class="headerlink" title="XHR对象的方法:"></a>XHR对象的方法:</h3><ul>
-<li>abort()    导致当前正在执行的请求被取消</li>
-<li>getAllResponseHeaders()    返回包含所有响应头的名称和值的单个字符</li>
-<li>getResponseHeader(name)    返回响应头中指定的名称和值</li>
-<li>open(method,url,async,username,pwd)    设置HTTP方法（get或post）等</li>
-<li>send(content)    发出带有指定主体内容的请求</li>
-<li>setRequestHeader(name,value)    使用指定的名称和值设置请求头</li>
-</ul>
-<h2 id="创建一个Ajax的步骤"><a href="#创建一个Ajax的步骤" class="headerlink" title="创建一个Ajax的步骤"></a>创建一个Ajax的步骤</h2><p>  1.创建ajax对象<br>  2.链接服务器<br>  3.发送请求<br>  4.接收返回信息<br>下面来看一个栗子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    	<span class="keyword">var</span> oBtn=<span class="built_in">document</span>.getElementById(<span class="string">'btn1'</span>);</span><br><span class="line"></span><br><span class="line">    	oBtn.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="comment">//1.创建ajax对象</span></span><br><span class="line">            <span class="keyword">var</span> oAjax=<span class="literal">null</span>;</span><br><span class="line">	        <span class="comment">//兼容处理</span></span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">window</span>.XMLHttpRequest) &#123;</span><br><span class="line">                oAjax=<span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                oAjax=<span class="keyword">new</span> ActiveXObject(<span class="string">"Microsoft.XMLHTTP"</span>);<span class="comment">//IE下创建ajax对象</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//2.链接服务器</span></span><br><span class="line">            oAjax.open(<span class="string">'GET'</span>,<span class="string">'mumu.txt'</span>,<span class="literal">true</span>);</span><br><span class="line">            <span class="comment">//3.发送请求</span></span><br><span class="line">            oAjax.send();</span><br><span class="line">            <span class="comment">//4.接收返回信息</span></span><br><span class="line">            oAjax.onreadystatechange=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	            <span class="keyword">if</span>(oAjax.readyState==<span class="number">4</span>)&#123;</span><br><span class="line">	                <span class="keyword">if</span>(oAjax.status==<span class="number">200</span>)&#123;</span><br><span class="line">	                      </span><br><span class="line">	                    <span class="built_in">console</span>.log(<span class="string">"成功:"</span>+oAjax.responseText);</span><br><span class="line">	                &#125;</span><br><span class="line">	                <span class="keyword">else</span>&#123;</span><br><span class="line">	                    <span class="built_in">console</span>.log(<span class="string">"失败"</span>);</span><br><span class="line">	                &#125;</span><br><span class="line">	            &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
-<p>注意：如果使用POST方式发送数据的话，在调用send()方法前，需要设置请求的类型：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">httpRequest.setRequestHeader(<span class="string">'Content-Type'</span>, <span class="string">'application/x-www-form-urlencoded'</span>);</span><br></pre></td></tr></table></figure></p>
-<h3 id="open-请求方法，请求url，是否异步-方法有三个参数："><a href="#open-请求方法，请求url，是否异步-方法有三个参数：" class="headerlink" title="open(请求方法，请求url，是否异步)方法有三个参数："></a>open(请求方法，请求url，是否异步)方法有三个参数：</h3><ul>
-<li>请求方法：HTTP请求方法 - GET、POST</li>
-<li>请求url：出于安全考虑，不能调用第三方域的页面内容。当调用open()方法时，一定确认使用相同域名内的页面，否则会得到“permission denied”的错误提示。</li>
-<li>是否异步：如果是true（默认值），表示是异步请求，false表示同步。</li>
-</ul>
-<h3 id="GET和POST"><a href="#GET和POST" class="headerlink" title="GET和POST:"></a>GET和POST:</h3><ul>
-<li>GET 常用于向服务器查询某些信息，请求的数据会附在URL之后，提交的数据最多只能是1024字节，与 POST 相比，GET更简单也更快，并且在大部分情况下都能用，比如浏览帖子</li>
-<li>POST 常用于向服务器发送应该被保存的数据或者修改服务器上的资源，把提交的数据放置在HTTP包的包体中。理论上POST没有限制，可传较大量的数据。在以下情况下可使用：<br>无法使用缓存文件（更新服务器上的文件或数据库）<br>向服务器发送大量数据（POST 没有数据量限制）<br>发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠</li>
-</ul>
-<h2 id="ajax的优缺点"><a href="#ajax的优缺点" class="headerlink" title="ajax的优缺点"></a>ajax的优缺点</h2><h3 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h3><ul>
-<li>最大的特点是页面无刷新，在页面内与服务器通信，给用户的体验非常好。</li>
-<li>优化了浏览器和服务器之间的传输，减少不必要的数据往返，减少了带宽占用</li>
-<li>Ajax在客户端运行，承担了一部分本来由服务器承担的工作，减少了大用户量下的服务器负载。</li>
-</ul>
-<h3 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h3><ul>
-<li>ajax不支持浏览器back按钮。</li>
-<li>安全问题 AJAX暴露了与服务器交互的细节。</li>
-<li>对搜索引擎的支持比较弱。</li>
-<li>破坏了程序的异常机制。</li>
-<li>不容易调试。</li>
-</ul>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li><a href="https://segmentfault.com/a/1190000000691919" target="_blank" rel="external">ajax</a> </li>
-<li><a href="http://tool.oschina.net/commons?type=5" target="_blank" rel="external">http状态码详解</a> </li>
-<li><a href="http://www.cnblogs.com/SanMaoSpace/p/3139186.html" target="_blank" rel="external">JSON与XML</a> </li>
-</ul>
+<p><code>如果当找到__proto__属性为null时，返回 undefined，证明不存在此方法或属性。这样一层一层查找实例上的原型上的属性就构成一条原型链。</code><br><img src="7.png" alt="tu"></p>
+<p>好了就到这里了，有不对的地方请指正~~~~</p>
 
       
     </div>
@@ -486,7 +473,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ajax-javascript/" rel="tag">#ajax javascript</a>
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
           
         </div>
       
@@ -495,13 +482,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/06/15/js数据类型及判别/" rel="next" title="菜鸟笔记--js数据类型及判别">
-                <i class="fa fa-chevron-left"></i> 菜鸟笔记--js数据类型及判别
-              </a>
-            
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/06/15/js数据类型及判别/" rel="prev" title="菜鸟笔记--js数据类型及判别">
+                菜鸟笔记--js数据类型及判别 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -553,8 +540,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/06/16/AJAX/"
-           data-title="菜鸟笔记--AJAX" data-url="http://yoursite.com/2016/06/16/AJAX/">
+      <div class="ds-thread" data-thread-key="2016/04/26/prototype2/"
+           data-title="菜鸟笔记--JavaScript原型与原型链" data-url="http://yoursite.com/2016/04/26/prototype2/">
       </div>
     
   </div>
@@ -690,7 +677,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是AJAX？"><span class="nav-number">1.</span> <span class="nav-text">什么是AJAX？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ajax的原理"><span class="nav-number">2.</span> <span class="nav-text">Ajax的原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#XHR对象的相关属性"><span class="nav-number">2.1.</span> <span class="nav-text">XHR对象的相关属性:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XHR对象的方法"><span class="nav-number">2.2.</span> <span class="nav-text">XHR对象的方法:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建一个Ajax的步骤"><span class="nav-number">3.</span> <span class="nav-text">创建一个Ajax的步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#open-请求方法，请求url，是否异步-方法有三个参数："><span class="nav-number">3.1.</span> <span class="nav-text">open(请求方法，请求url，是否异步)方法有三个参数：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GET和POST"><span class="nav-number">3.2.</span> <span class="nav-text">GET和POST:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ajax的优缺点"><span class="nav-number">4.</span> <span class="nav-text">ajax的优缺点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#优点："><span class="nav-number">4.1.</span> <span class="nav-text">优点：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缺点："><span class="nav-number">4.2.</span> <span class="nav-text">缺点：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">5.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是原型？"><span class="nav-number">1.</span> <span class="nav-text">什么是原型？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原型链"><span class="nav-number">2.</span> <span class="nav-text">原型链</span></a></li></ol></div>
             
           </div>
         </section>
