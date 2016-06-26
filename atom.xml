@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-06-26T04:00:14.616Z</updated>
+  <updated>2016-06-26T06:11:35.919Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,14 +20,14 @@
     <link href="http://yoursite.com/2016/06/16/test3/"/>
     <id>http://yoursite.com/2016/06/16/test3/</id>
     <published>2016-06-16T06:49:01.000Z</published>
-    <updated>2016-06-26T04:00:14.616Z</updated>
+    <updated>2016-06-26T06:11:35.919Z</updated>
     
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;加油学习~奋斗 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;什么是AJAX？&quot;&gt;&lt;a href=&quot;#什么是AJAX？&quot; class=&quot;headerlink&quot; title=&quot;什么是AJAX？&quot;&gt;&lt;/a&gt;什么是AJAX？&lt;/h2&gt;&lt;p&gt;AJAX是一种无需刷新页面就能够从服务器取得数据的方法(“异步”特性),允许你根据用户事件来更新部分页面内容。它是使用XMLHttpRequest对象(AJAX核心)与服务器端通信的脚本语言。它可以发送及接收各种格式的信息，包括JSON、XML、HTML和文本文件。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;比如，我们注册的时候信息填写错误，是不是没刷新页面就能直接看到信息提示，比如我们玩QQ的时候，有什么消息都会自动提醒你，不需要你去刷新页面，不会影响你干别的事情，这就是Ajax做的事情。&lt;/p&gt;
-&lt;h2 id=&quot;Ajax的原理&quot;&gt;&lt;a href=&quot;#Ajax的原理&quot; class=&quot;headerlink&quot; title=&quot;Ajax的原理&quot;&gt;&lt;/a&gt;Ajax的原理&lt;/h2&gt;&lt;p&gt;通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面。其中最关键的一步就是从服务器获得请求数据。要清楚这个过程和原理，我们必须对 XMLHttpRequest有所了解。下面就看看XHR对象的相关属性:&lt;/p&gt;
-&lt;ul&gt;
+&lt;h2 id=&quot;Ajax的原理&quot;&gt;&lt;a href=&quot;#Ajax的原理&quot; class=&quot;headerlink&quot; title=&quot;Ajax的原理&quot;&gt;&lt;/a&gt;Ajax的原理&lt;/h2&gt;&lt;p&gt;通过XmlHttpRequest对象来向服务器发异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面。其中最关键的一步就是从服务器获得请求数据。要清楚这个过程和原理，我们必须对 XMLHttpRequest有所了解。&lt;/p&gt;
+&lt;h3 id=&quot;XHR对象的相关属性&quot;&gt;&lt;a href=&quot;#XHR对象的相关属性&quot; class=&quot;headerlink&quot; title=&quot;XHR对象的相关属性:&quot;&gt;&lt;/a&gt;XHR对象的相关属性:&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;onreadystatechange  每次状态改变所触发事件的事件处理程序，类似于window.onload&lt;/li&gt;
 &lt;li&gt;responseText   作为响应主体被返回的文本，也就是服务器返回的信息&lt;/li&gt;
 &lt;li&gt;responseXML    从服务器进程返回的DOM兼容的文档数据对象。&lt;/li&gt;
@@ -40,11 +40,41 @@
 4 ：完成，数据接收完毕,可以再客户端使用了
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&quot;XHR对象的方法&quot;&gt;&lt;a href=&quot;#XHR对象的方法&quot; class=&quot;headerlink&quot; title=&quot;XHR对象的方法:&quot;&gt;&lt;/a&gt;XHR对象的方法:&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;abort()    导致当前正在执行的请求被取消&lt;/li&gt;
+&lt;li&gt;getAllResponseHeaders()    返回包含所有响应头的名称和值的单个字符&lt;/li&gt;
+&lt;li&gt;getResponseHeader(name)    返回响应头中指定的名称和值&lt;/li&gt;
+&lt;li&gt;open(method,url,async,username,pwd)    设置HTTP方法（get或post）等&lt;/li&gt;
+&lt;li&gt;send(content)    发出带有指定主体内容的请求&lt;/li&gt;
+&lt;li&gt;setRequestHeader(name,value)    使用指定的名称和值设置请求头&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&quot;创建一个Ajax的步骤&quot;&gt;&lt;a href=&quot;#创建一个Ajax的步骤&quot; class=&quot;headerlink&quot; title=&quot;创建一个Ajax的步骤&quot;&gt;&lt;/a&gt;创建一个Ajax的步骤&lt;/h2&gt;&lt;p&gt;  1.创建ajax对象&lt;br&gt;  2.链接服务器&lt;br&gt;  3.发送请求&lt;br&gt;  4.接收返回信息&lt;br&gt;下面来看一个栗子：&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;.onload=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; oBtn=&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;.getElementById(&lt;span class=&quot;string&quot;&gt;&#39;btn1&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    	oBtn.onclick=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//1.创建ajax对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; oAjax=&lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	        &lt;span class=&quot;comment&quot;&gt;//兼容处理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;built_in&quot;&gt;window&lt;/span&gt;.XMLHttpRequest) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                oAjax=&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; XMLHttpRequest();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                oAjax=&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ActiveXObject(&lt;span class=&quot;string&quot;&gt;&quot;Microsoft.XMLHTTP&quot;&lt;/span&gt;);&lt;span class=&quot;comment&quot;&gt;//IE下创建ajax对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//2.链接服务器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            oAjax.open(&lt;span class=&quot;string&quot;&gt;&#39;GET&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;mumu.txt&#39;&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//3.发送请求&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            oAjax.send();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;//4.接收返回信息&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            oAjax.onreadystatechange=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(oAjax.readyState==&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	                &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(oAjax.status==&lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	                      &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	                    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&quot;成功:&quot;&lt;/span&gt;+oAjax.responseText);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	                &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	                    &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&quot;失败&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;注意：如果使用POST方式发送数据的话，在调用send()方法前，需要设置请求的类型：&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;httpRequest.setRequestHeader(&lt;span class=&quot;string&quot;&gt;&#39;Content-Type&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;application/x-www-form-urlencoded&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&quot;open-请求方法，请求url，是否异步-方法有三个参数：&quot;&gt;&lt;a href=&quot;#open-请求方法，请求url，是否异步-方法有三个参数：&quot; class=&quot;headerlink&quot; title=&quot;open(请求方法，请求url，是否异步)方法有三个参数：&quot;&gt;&lt;/a&gt;open(请求方法，请求url，是否异步)方法有三个参数：&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;请求方法：HTTP请求方法 - GET、POST&lt;/li&gt;
 &lt;li&gt;请求url：出于安全考虑，不能调用第三方域的页面内容。当调用open()方法时，一定确认使用相同域名内的页面，否则会得到“permission denied”的错误提示。&lt;/li&gt;
 &lt;li&gt;是否异步：如果是true（默认值），表示是异步请求，false表示同步。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;GET和POST&quot;&gt;&lt;a href=&quot;#GET和POST&quot; class=&quot;headerlink&quot; title=&quot;GET和POST:&quot;&gt;&lt;/a&gt;GET和POST:&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;GET 常用于向服务器查询某些信息，请求的数据会附在URL之后，提交的数据最多只能是1024字节，与 POST 相比，GET更简单也更快，并且在大部分情况下都能用，比如浏览帖子&lt;/li&gt;
+&lt;li&gt;POST 常用于向服务器发送应该被保存的数据或者修改服务器上的资源，把提交的数据放置在HTTP包的包体中。理论上POST没有限制，可传较大量的数据。在以下情况下可使用：&lt;br&gt;无法使用缓存文件（更新服务器上的文件或数据库）&lt;br&gt;向服务器发送大量数据（POST 没有数据量限制）&lt;br&gt;发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;ajax的优缺点&quot;&gt;&lt;a href=&quot;#ajax的优缺点&quot; class=&quot;headerlink&quot; title=&quot;ajax的优缺点&quot;&gt;&lt;/a&gt;ajax的优缺点&lt;/h2&gt;&lt;h3 id=&quot;优点：&quot;&gt;&lt;a href=&quot;#优点：&quot; class=&quot;headerlink&quot; title=&quot;优点：&quot;&gt;&lt;/a&gt;优点：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;最大的特点是页面无刷新，在页面内与服务器通信，给用户的体验非常好。&lt;/li&gt;
+&lt;li&gt;优化了浏览器和服务器之间的传输，减少不必要的数据往返，减少了带宽占用&lt;/li&gt;
+&lt;li&gt;Ajax在客户端运行，承担了一部分本来由服务器承担的工作，减少了大用户量下的服务器负载。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;缺点：&quot;&gt;&lt;a href=&quot;#缺点：&quot; class=&quot;headerlink&quot; title=&quot;缺点：&quot;&gt;&lt;/a&gt;缺点：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;ajax不支持浏览器back按钮。&lt;/li&gt;
+&lt;li&gt;安全问题 AJAX暴露了与服务器交互的细节。&lt;/li&gt;
+&lt;li&gt;对搜索引擎的支持比较弱。&lt;/li&gt;
+&lt;li&gt;破坏了程序的异常机制。&lt;/li&gt;
+&lt;li&gt;不容易调试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;参考文献&quot;&gt;&lt;a href=&quot;#参考文献&quot; class=&quot;headerlink&quot; title=&quot;参考文献&quot;&gt;&lt;/a&gt;参考文献&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000000691919&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ajax&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http状态码详解&quot;&gt;http状态码详解&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/SanMaoSpace/p/3139186.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JSON与XML&lt;/a&gt; &lt;/li&gt;
 &lt;/ul&gt;
 </content>
     
